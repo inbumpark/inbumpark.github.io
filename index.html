@@ -53,7 +53,40 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-					
+
+				<tr onmouseout="robustflow_stop()" onmouseover="robustflow_start()"> <!--  bgcolor="#ffffd0"> -->
+			      <td style="padding:20px;width:25%;vertical-align:middle">
+			        <div class="one">
+			          <div class="two" id='robustflow_image'>
+			          <img src="images/robustflow.gif" width="160">
+			          </div>
+			          <img src='images/robustflow.png' width="160">
+			        </div>
+			        <script type="text/javascript">
+			          function robustflow_start() {
+			            document.getElementById('robustflow_image').style.opacity = "1";
+			          }
+
+			          function robustflow_stop() {
+			            document.getElementById('robustflow_image').style.opacity = "0";
+			          }
+			          cgca_stop()
+			        </script>
+			      </td>
+			            <td style="padding:20px;width:75%;vertical-align:middle">
+			            <papertitle>On the Robustness of Normalizing Flows for Inverse Problems in Imaging</papertitle>
+			          <br>
+			          Seongmin Hong,
+			          <strong>Inbum Park</strong>,
+			          <a href="https://icl.snu.ac.kr/pi/">Se Young Chun</a>
+			          <br>
+			    <em>arXiv Preprint</em>, 2022 &nbsp
+			          <br>
+			          <a href="http://arXiv.org/abs/2212.04319">paper</a>
+			          <p>A study on erroneous images occasionally generated from flow-based models for inverse problems in imaging.</p>
+			        </td>
+			      </tr>
+
 			    <tr onmouseout="cgca_stop()" onmouseover="cgca_start()"> <!--  bgcolor="#ffffd0"> -->
 			      <td style="padding:20px;width:25%;vertical-align:middle">
 			        <div class="one">
@@ -82,9 +115,9 @@
 			          <strong>Inbum Park</strong>,
 			          <a href="https://3d.snu.ac.kr/members/">Young Min Kim</a>
 			          <br>
-			    <em>ICLR</em>, 2022 &nbsp <font color="red"><strong>(Spotlight)</strong></font>
+			    <em>International Conference on Learning Representations (ICLR)</em>, 2022 &nbsp <font color="red"><strong>(Spotlight)</strong></font>
 			          <br>
-			          <a href="https://openreview.net/forum?id=BnQhMqDfcKG">pdf</a>
+			          <a href="https://openreview.net/forum?id=BnQhMqDfcKG">paper</a>
 			    /
 			          <a href="https://github.com/96lives/gca">code</a>
 			          <p></p>
