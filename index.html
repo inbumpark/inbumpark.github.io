@@ -53,6 +53,38 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+				<tr onmouseout="text2pc_stop()" onmouseover="text2pc_start()"> <!-- "bgcolor="#ffffd0"> -->
+			      <td style="padding:20px;width:25%;vertical-align:middle">
+			        <div class="one">
+			          <div class="two" id='text2pc_image'>
+			          <img src="images/text2pc.JPG" width="160">
+			          </div>
+			          <img src='images/text2pc.JPG' width="160">
+			        </div>
+			        <script type="text/javascript">
+			          function text2pc_start() {
+			            document.getElementById('text2pc_image').style.opacity = "1";
+			          }
+
+			          function text2pc_stop() {
+			            document.getElementById('text2pc_image').style.opacity = "0";
+			          }
+			          text2pc_stop()
+			        </script>
+			      </td>
+			            <td style="padding:20px;width:75%;vertical-align:middle">
+			            <papertitle>Text2PointCloud: Text-Driven Stylization for Sparse PointCloud</papertitle>
+			          <br>
+			          Inwoo Hwang, Hyeonwoo Kim, Donggeun Lim,
+			          <strong>Inbum Park</strong>,
+			          <a href="https://3d.snu.ac.kr/members/">Young Min Kim</a>
+			          <br>
+			    <em>Eurographics (Short Papers)</em>, 2023 (to appear) &nbsp
+			          <br>
+			          <p>A framework that stylizes and upsamples an uncolored, sparse pointcloud given a text description to render a high-quality 3D output.</p>
+			        </td>
+			      </tr>
+
 				<tr onmouseout="robustflow_stop()" onmouseover="robustflow_start()"> <!-- "bgcolor="#ffffd0"> -->
 			      <td style="padding:20px;width:25%;vertical-align:middle">
 			        <div class="one">
