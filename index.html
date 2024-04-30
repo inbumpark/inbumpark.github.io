@@ -20,10 +20,14 @@
               <p style="text-align:center">
                 <name>Aaron Inbum Park</name>
               </p>
-              <p>I am a first year M.S. student at the <a href="https://ece.engin.umich.edu">University of Michigan</a>, where I am majoring in Electrical and Computer Engineering (Computer Vision).
+              <p>I am a master's student at the <a href="https://ece.engin.umich.edu">University of Michigan</a>, advised by Prof. <a href="https://andrewowens.com">Andrew Owens</a>.
+			  </p>
+				<p>
+				  I obtained my bachelor's degree in Electrical and Computer Engineering from <a href="https://ece.snu.ac.kr/en">Seoul National University</a>, where I was fortunate to work under
+				  Prof. <a href="https://sites.google.com/view/jungdam/home">Jungdam Won</a>, Prof. <a href="https://icl.snu.ac.kr/pi">Se Young Chun</a>, and Prof. <a href="https://3d.snu.ac.kr/members/">Young Min Kim</a>.
               </p>
 				<p>
-					I am mostly interested in the area of computer vision, particularly image, shape, or motion reconstruction using generative models.
+					My research interests lie in the area of computer vision, especially leveraging generative models for image, shape, or motion reconstruction.
 					<!-- Representative papers are <span class="highlight">highlighted</span>. -->
 				</p>
               <p style="text-align:center">
@@ -48,11 +52,46 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
+              <heading>Publications</heading>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+				<tr onmouseout="fact_stop()" onmouseover="fact_start()"> <!-- "bgcolor="#ffffd0"> -->
+				  <td style="padding:20px;width:25%;vertical-align:middle">
+					<div class="one">
+					  <div class="two" id='fact_image'>
+					  <img src="images/fact.gif" style="transform: scale(1.2); width: 160px; height: 160px;">
+				 	  </div>
+					  <img src='images/fact.png' width="160">
+					</div>
+					<script type="text/javascript">
+					  function fact_start() {
+					  document.getElementById('fact_image').style.opacity = "1";
+					  }
+
+					  function fact_stop() {
+					  document.getElementById('fact_image').style.opacity = "0";
+					  }
+					  fact_stop()
+					</script>
+				  </td>
+						<td style="padding:20px;width:75%;vertical-align:middle">
+						<papertitle>Factorized Diffusion: Perceptual Illusions by Noise Decomposition</papertitle>
+					  <br>
+					  <a href="https://dangeng.github.io/">Daniel Geng*</a>,
+					  <strong>Inbum Park*</strong>,
+					  <a href="https://andrewowens.com">Andrew Owens</a>
+					  <br>
+				<em>arXiv</em>, 2024 &nbsp
+					  <br>
+				  <a href="https://arxiv.org/pdf/2404.11615.pdf">paper</a> /
+					  <a href="https://arxiv.org/abs/2404.11615">arXiv</a> /
+					  <a href="https://dangeng.github.io/factorized_diffusion/">project</a>
+					  <p>We generate various perceptual illusions by controlling components of an image using off-the-shelf diffusion models.
+						  Our method can produce hybrid images and relates to prior work in compositional generation and inverse problems.</p>
+					</td>
+				  </tr>
 
 				<tr onmouseout="vanagram_stop()" onmouseover="vanagram_start()"> <!-- "bgcolor="#ffffd0"> -->
 				  <td style="padding:20px;width:25%;vertical-align:middle">
@@ -85,7 +124,7 @@
 				  <a href="https://arxiv.org/pdf/2311.17919.pdf">paper</a> /
 					  <a href="https://arxiv.org/abs/2311.17919">arXiv</a> /
 					  <a href="https://dangeng.github.io/visual_anagrams/">project</a>
-					  <p>We generate multi-view optical illusions, which are images that change their appearance or identity upon a transformation, using off-the-shelf diffusion models.</p>
+					  <p>A simple, zero-shot method for generating multi-view optical illusions, which are images that change their appearance or identity upon a transformation.</p>
 					</td>
 				  </tr>
 
@@ -153,7 +192,8 @@
 			          <br>
 			    <em>Eurographics (Short Papers)</em>, 2023 &nbsp
 			          <br>
-			          <a href="https://diglib.eg.org/xmlui/handle/10.2312/egs20231007">paper</a>
+			          <a href="https://diglib.eg.org/xmlui/handle/10.2312/egs20231007">paper</a> /
+							<a href="https://www.youtube.com/watch?v=aGDaKHKv1Xc">video</a>
 			          <p>A framework that stylizes and upsamples an uncolored, sparse pointcloud given a text description to render a high-quality 3D output.</p>
 			        </td>
 			      </tr>
@@ -203,7 +243,7 @@
           <tr>
             <td>
               <heading>Misc</heading>
-              <p>I am immersed in the choreography scene and learning French and Italian.</p>
+              <p>I am immersed in the choreography scene and also love learning languages, including French and Italian.</p>
             </td>
           </tr>
         </tbody></table>
