@@ -7,269 +7,192 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Aaron Inbum Park</name>
-              </p>
-              <p>I am an M.S. student at the <a href="https://ece.engin.umich.edu">University of Michigan</a>, advised by Prof. <a href="https://andrewowens.com">Andrew Owens</a>.
-			  </p>
-				<p>
-				  I obtained my bachelor's degree in Electrical and Computer Engineering from <a href="https://ece.snu.ac.kr/en">Seoul National University</a>, where I was fortunate to work under
-				  Prof. <a href="https://sites.google.com/view/jungdam/home">Jungdam Won</a>, Prof. <a href="https://icl.snu.ac.kr/pi">Se Young Chun</a>, and Prof. <a href="https://3d.snu.ac.kr/members/">Young Min Kim</a>.
-              </p>
-				<p>
-					My research interests lie in the intersection of computer vision and graphics, especially leveraging generative models for compositional image/shape generation or motion reconstruction.
-					<!-- Representative papers are <span class="highlight">highlighted</span>. -->
-				</p>
-				<p style="text-align:center; font-size:15px">
-					<font color="red">**I am actively looking for PhD openings starting in Fall 2025**</font>
-				</p>
-              <p style="text-align:center">
-                <a href="mailto:ibpark@umich.edu">Email</a> &nbsp/&nbsp;
-                <a href="data/CV_InbumPark.pdf">CV</a> &nbsp/&nbsp;
-                <a href="https://scholar.google.com/citations?user=Xa-ETLoAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp;
-                <a href="https://www.linkedin.com/in/aaron-inbum-park-9803a91aa/">LinkedIn</a> &nbsp/&nbsp;
-                <a href="https://x.com/invernopark/">Twitter</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/InbumPark.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/InbumPark-circle.png" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding-left:20px;padding-top:20px;width:100%;vertical-align:middle">
-              <heading>Publications</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-				<tr onmouseout="FD_stop()" onmouseover="FD_start()">
-				  <td style="padding:20px;width:25%;vertical-align:middle">
-					<div class="one">
-					  <div class="two" id='FD' style="margin-top:15px">
-					  <img src="images/tshirt.gif" style="transform: scale(1.2); width: 160px; height: 160px;">
-				 	  </div>
-					  <img src='images/FD.jpg' width="160">
-					</div>
-					<script type="text/javascript">
-					  function FD_start() {
-					  document.getElementById('FD').style.opacity = "1";
-					  }
+  <!-- Navigation -->
+  <nav class="nav-container">
+    <div class="nav-content">
+      <a href="#" class="nav-brand">Aaron Inbum Park</a>
+      <div class="nav-links">
+        <a href="#bio" class="nav-link">Bio</a>
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#service" class="nav-link">Service</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="personal.html" class="nav-link">Personal</a>
+      </div>
+    </div>
+  </nav>
 
-					  function FD_stop() {
-					  document.getElementById('FD').style.opacity = "0";
-					  }
-					  FD_stop()
-					</script>
-				  </td>
-						<td style="padding:20px;width:75%;vertical-align:middle">
-						<papertitle><span style="display: inline-block; margin-bottom: 5px;">Factorized Diffusion: Perceptual Illusions by Noise Decomposition</span></papertitle>
-					  <br>
-					  <a href="https://dangeng.github.io/">Daniel Geng*</a>,
-					  <strong>Inbum Park*</strong>,
-					  <a href="https://andrewowens.com">Andrew Owens</a>
-					  <br>
-				<em>European Conference on Computer Vision (ECCV)</em>, 2024 &nbsp
-					  <br>
-					  <p>Another zero-shot framework that is able to generate various perceptual illusions like <a href="https://stanford.edu/class/ee367/reading/OlivaTorralb_Hybrid_Siggraph06.pdf">hybrid images</a>,
-					   by controlling linear components of an image, with connections to prior work in compositional generation and inverse problems.</p>
-				  <a href="https://arxiv.org/pdf/2404.11615.pdf">paper</a> /
-					  <a href="https://arxiv.org/abs/2404.11615">arXiv</a> /
-					  <a href="https://dangeng.github.io/factorized_diffusion/">project</a>
-					</td>
-				  </tr>
+  <div class="main-content">
+    <!-- Bio Section -->
+    <section id="bio">
+      <div class="bio-container">
+        <div class="bio-image">
+          <div class="profile-container">
+            <div class="profile-flipper">
+              <div class="profile-front">
+                <img style="width:100%;max-width:100%" alt="profile photo" src="images/headshot-front.png">
+              </div>
+              <div class="profile-back">
+                <img style="width:100%;max-width:100%" alt="profile photo back" src="images/headshot-back.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bio-content">
+          <p>I am an incoming CS Ph.D. student at the <a href="https://cs.umd.edu/grad">University of Maryland.</a></p>
+          <p>Prior to that, I graduated with an M.S. at the <a href="https://ece.engin.umich.edu">University of Michigan</a>, where I was fortunate to be advised by Prof. <a href="https://andrewowens.com">Andrew Owens</a> and closely worked with <a href="https://dangeng.github.io">Daniel Geng</a> and <a href="https://www.connellybarnes.com/work/">Connelly Barnes</a>.
+            During my bachelor's degree at <a href="https://ece.snu.ac.kr/en">Seoul National University</a>, I worked with Prof. <a href="https://sites.google.com/view/jungdam/home">Jungdam Won</a>, Prof. <a href="https://icl.snu.ac.kr/pi">Se Young Chun</a>, and Prof. <a href="https://3d.snu.ac.kr/members/">Young Min Kim</a>.</p>
+          <p>My research interests lie in the intersection of computer vision and graphics, especially leveraging generative models for compositional image/shape generation or motion reconstruction.</p>
+        </div>
+      </div>
+    </section>
 
-				<tr onmouseout="VA_stop()" onmouseover="VA_start()">
-				  <td style="padding-left:20px;padding-top:30px;width:25%;vertical-align:middle">
-					<div class="one">
-					  <div class="two" id='VA' style="margin-top:5px">
-					  <img src="images/VA.gif" style="transform: scale(1.1); width: 160px;">
-				 	  </div>
-					  <img src='images/VA.png' width="160">
-					</div>
-					<script type="text/javascript">
-					  function VA_start() {
-					  document.getElementById('VA').style.opacity = "1";
-					  }
+    <!-- Publications Section -->
+    <section id="publications">
+      <heading>Publications</heading>
+      
+      <div class="publications-grid">
+        <!-- Factorized Diffusion -->
+        <div class="publication-item">
+          <img src="images/tshirt.gif" class="publication-image" alt="Factorized Diffusion">
+          <div class="publication-content">
+            <div class="publication-title">Factorized Diffusion: Perceptual Illusions by Noise Decomposition</div>
+            <div class="publication-authors">Daniel Geng*, Inbum Park*, Andrew Owens</div>
+            <div class="publication-venue">European Conference on Computer Vision (ECCV), 2024</div>
+            <p>Another zero-shot framework that is able to generate various perceptual illusions like hybrid images, by controlling linear components of an image.</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/pdf/2404.11615.pdf">paper</a>
+              <a href="https://arxiv.org/abs/2404.11615">arXiv</a>
+              <a href="https://dangeng.github.io/factorized_diffusion/">project</a>
+            </div>
+          </div>
+        </div>
 
-					  function VA_stop() {
-					  document.getElementById('VA').style.opacity = "0";
-					  }
-					  VA_stop()
-					</script>
-				  </td>
-						<td style="padding-left:20px;padding-top:30px;width:75%;vertical-align:middle">
-						<papertitle><span style="display: inline-block; margin-bottom: 5px;">Visual Anagrams: Generating Multi-View Optical Illusions with Diffusion Models</span></papertitle>
-					  <br>
-					  <a href="https://dangeng.github.io/">Daniel Geng</a>,
-					  <strong>Inbum Park</strong>,
-					  <a href="https://andrewowens.com">Andrew Owens</a>
-					  <br>
-				<em>Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2024 <font color="red"><strong>(Oral)</strong></font> &nbsp
-					  <br>
-					  <p>A simple, zero-shot method for generating multi-view optical illusions, which are images that change their appearance or identity upon a transformation.</p>
-				  <a href="https://arxiv.org/pdf/2311.17919.pdf">paper</a> /
-					  <a href="https://arxiv.org/abs/2311.17919">arXiv</a> /
-					  <a href="https://dangeng.github.io/visual_anagrams/">project</a>
-					</td>
-				  </tr>
+        <!-- Visual Anagrams -->
+        <div class="publication-item">
+          <img src="images/VA.gif" class="publication-image" alt="Visual Anagrams">
+          <div class="publication-content">
+            <div class="publication-title">Visual Anagrams: Generating Multi-View Optical Illusions with Diffusion Models</div>
+            <div class="publication-authors">Daniel Geng, Inbum Park, Andrew Owens</div>
+            <div class="publication-venue">Conference on Computer Vision and Pattern Recognition (CVPR), 2024 <span class="presentation-highlight">(Oral)</span></div>
+            <p>A simple, zero-shot method for generating multi-view optical illusions, which are images that change their appearance or identity upon a transformation.</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/pdf/2311.17919.pdf">paper</a>
+              <a href="https://arxiv.org/abs/2311.17919">arXiv</a>
+              <a href="https://dangeng.github.io/visual_anagrams/">project</a>
+            </div>
+          </div>
+        </div>
 
-				<tr onmouseout="robustflow_stop()" onmouseover="robustflow_start()">
-			      <td style="padding-left:20px;padding-top:40px;width:25%;vertical-align:middle">
-			        <div class="one">
-			          <div class="two" id='robustflow'>
-			          <img src="images/robustflow.gif" width="160">
-			          </div>
-			          <img src='images/robustflow.png' width="160">
-			        </div>
-			        <script type="text/javascript">
-			          function robustflow_start() {
-			            document.getElementById('robustflow').style.opacity = "1";
-			          }
+        <!-- Robust Flow -->
+        <div class="publication-item">
+          <img src="images/robustflow.gif" class="publication-image" alt="Robust Flow">
+          <div class="publication-content">
+            <div class="publication-title">On the Robustness of Normalizing Flows for Inverse Problems in Imaging</div>
+            <div class="publication-authors">Seongmin Hong, Inbum Park, Se Young Chun</div>
+            <div class="publication-venue">International Conference on Computer Vision (ICCV), 2023</div>
+            <p>A study on erroneous images occasionally generated from flow-based models for inverse problems in imaging.</p>
+            <div class="publication-links">
+              <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Hong_On_the_Robustness_of_Normalizing_Flows_for_Inverse_Problems_in_ICCV_2023_paper.pdf">paper</a>
+              <a href="http://arXiv.org/abs/2212.04319">arXiv</a>
+              <a href="https://smhongok.github.io/robustness.html">project</a>
+            </div>
+          </div>
+        </div>
 
-			          function robustflow_stop() {
-			            document.getElementById('robustflow').style.opacity = "0";
-			          }
-			          robustflow_stop()
-			        </script>
-			      </td>
-			            <td style="padding-left:20px;padding-top:40px;width:75%;vertical-align:middle">
-			            <papertitle><span style="display: inline-block; margin-bottom: 5px;">On the Robustness of Normalizing Flows for Inverse Problems in Imaging</span></papertitle>
-			          <br>
-			          <a href="https://smhongok.github.io/">Seongmin Hong</a>,
-			          <strong>Inbum Park</strong>,
-			          <a href="https://icl.snu.ac.kr/pi/">Se Young Chun</a>
-			          <br>
-			    <em>International Conference on Computer Vision (ICCV)</em>, 2023 &nbsp
-			          <br>
-					  <p>A study on erroneous images occasionally generated from flow-based models for inverse problems in imaging.</p>
-				  <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Hong_On_the_Robustness_of_Normalizing_Flows_for_Inverse_Problems_in_ICCV_2023_paper.pdf">paper</a> /
-			          <a href="http://arXiv.org/abs/2212.04319">arXiv</a> /
-			          <a href="https://smhongok.github.io/robustness.html">project</a>
-			        </td>
-			      </tr>
+        <!-- Text2PointCloud -->
+        <div class="publication-item">
+          <img src="images/txt2pc.png" class="publication-image" alt="Text2PointCloud">
+          <div class="publication-content">
+            <div class="publication-title">Text2PointCloud: Text-Driven Stylization for Sparse PointCloud</div>
+            <div class="publication-authors">Inwoo Hwang, Hyeonwoo Kim, Donggeun Lim, Inbum Park, Young Min Kim</div>
+            <div class="publication-venue">Eurographics (Short Papers), 2023</div>
+            <p>A framework that stylizes and upsamples an uncolored, sparse pointcloud given a text description to render a high-quality 3D output.</p>
+            <div class="publication-links">
+              <a href="https://diglib.eg.org/xmlui/handle/10.2312/egs20231007">paper</a>
+              <a href="https://www.youtube.com/watch?v=aGDaKHKv1Xc">video</a>
+            </div>
+          </div>
+        </div>
 
-				<tr onmouseout="txt2pc_stop()" onmouseover="txt2pc_start()">
-			      <td style="padding-left:20px;padding-top:40px;width:25%;vertical-align:middle">
-			        <div class="one">
-			          <div class="two" id='txt2pc'>
-			          <img src="images/txt2pc.png" width="160">
-			          </div>
-			          <img src='images/txt2pc.png' width="160">
-			        </div>
-			        <script type="text/javascript">
-			          function txt2pc_start() {
-			            document.getElementById('txt2pc').style.opacity = "1";
-			          }
+        <!-- CGCA -->
+        <div class="publication-item">
+          <img src="images/cgca.gif" class="publication-image" alt="CGCA">
+          <div class="publication-content">
+            <div class="publication-title">Probabilistic Implicit Scene Completion</div>
+            <div class="publication-authors">Dongsu Zhang, Changwoon Choi, Inbum Park, Young Min Kim</div>
+            <div class="publication-venue">International Conference on Learning Representations (ICLR), 2022 <span class="presentation-highlight">(Spotlight)</span></div>
+            <p>A probabilistic approach to shape completion and scene reconstruction using 3D implicit representations.</p>
+            <div class="publication-links">
+              <a href="https://openreview.net/forum?id=BnQhMqDfcKG">paper</a>
+              <a href="https://arxiv.org/abs/2204.01264">arXiv</a>
+              <a href="https://github.com/96lives/gca">code</a>
+            </div>
+          </div>
+        </div>
 
-			          function txt2pc_stop() {
-			            document.getElementById('txt2pc').style.opacity = "0";
-			          }
-			          txt2pc_stop()
-			        </script>
-			      </td>
-			            <td style="padding-left:20px;padding-top:40px;width:75%;vertical-align:middle">
-			            <papertitle><span style="display: inline-block; margin-bottom: 5px;">Text2PointCloud: Text-Driven Stylization for Sparse PointCloud</span></papertitle>
-			          <br>
-			          <a href="https://inwoohwang.me/">Inwoo Hwang</a>,
-			          <a href="https://www.sshowbiz.xyz/">Hyeonwoo Kim</a>, Donggeun Lim,
-			          <strong>Inbum Park</strong>,
-			          <a href="https://3d.snu.ac.kr/members/">Young Min Kim</a>
-			          <br>
-			    <em>Eurographics (Short Papers)</em>, 2023 &nbsp
-			          <br>
-					  <p>A framework that stylizes and upsamples an uncolored, sparse pointcloud given a text description to render a high-quality 3D output.</p>
-			          <a href="https://diglib.eg.org/xmlui/handle/10.2312/egs20231007">paper</a> /
-							<a href="https://www.youtube.com/watch?v=aGDaKHKv1Xc">video</a>
-			        </td>
-			      </tr>
+        <!-- TBD Placeholder -->
+        <div class="publication-item">
+          <div class="publication-tbd">
+            <i class="fas fa-flask"></i>
+            <span>Coming Soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			    <tr onmouseout="cgca_stop()" onmouseover="cgca_start()">
-			      <td style="padding-left:20px;padding-top:-20px;width:25%;vertical-align:middle">
-			        <div class="one" style="margin-top:60px">
-			          <div class="two" id='cgca'>
-			          <img src="images/cgca.gif" width="160">
-			          </div>
-			          <img src='images/cgca.png' width="160">
-			        </div>
-			        <script type="text/javascript">
-			          function cgca_start() {
-			            document.getElementById('cgca').style.opacity = "1";
-			          }
+    <!-- Service Section -->
+    <section id="service">
+      <heading>Service</heading>
+      <p>&#x2022; CVPR 2025 Reviewer</p>
+      <p>&#x2022; SIGGRAPH 2025 Reviewer</p>
+    </section>
 
-			          function cgca_stop() {
-			            document.getElementById('cgca').style.opacity = "0";
-			          }
-			          cgca_stop()
-			        </script>
-			      </td>
-			            <td style="padding:20px;width:75%;vertical-align:middle">
-			            <papertitle><span style="display: inline-block; margin-bottom: 5px;">Probabilistic Implicit Scene Completion</span></papertitle>
-			          <br>
-			          <a href="http://dszhang.me/about">Dongsu Zhang</a>,
-			          <a href="http://changwoon.me/">Changwoon Choi</a>,
-
-			          <strong>Inbum Park</strong>,
-			          <a href="https://3d.snu.ac.kr/members/">Young Min Kim</a>
-			          <br>
-			    <em>International Conference on Learning Representations (ICLR)</em>, 2022 <font color="red"><strong>(Spotlight)</strong></font> &nbsp
-			          <br>
-					  <p>A probabilistic approach to shape completion and scene reconstruction using 3D implicit representations.</p>
-			          <a href="https://openreview.net/forum?id=BnQhMqDfcKG">paper</a> /
-			          <a href="https://arxiv.org/abs/2204.01264">arXiv</a> /
-			          <a href="https://github.com/96lives/gca">code</a>
-			        </td>
-			      </tr>
-
-        </tbody></table>
-		<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+    <!-- Contact Section -->
+    <section id="contact">
+      <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
           <tr>
-            <td>
-              <heading>Service</heading>
-              <p>&#x2022; Reviewer: CVPR 2025 </p>
+            <td style="padding:20px;text-align:center">
+              <heading>Contact</heading>
+              <div class="social-links">
+                <a href="mailto:ibpark@umd.edu" class="social-icon" title="Email">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=Xa-ETLoAAAAJ&hl=en" class="social-icon" title="Google Scholar">
+                  <i class="fas fa-graduation-cap"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aaron-inbum-park-9803a91aa/" class="social-icon" title="LinkedIn">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/invernopark/" class="social-icon" title="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
             </td>
           </tr>
-        </tbody></table>
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+        </tbody>
+      </table>
+    </section>
 
-				
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Misc</heading>
-              <p>I am immersed in the choreography scene and also love learning languages, including French and Italian.</p>
-            </td>
-          </tr>
-        </tbody></table>
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-
-					
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                <br>
-                Source code credit to <a href="https://jonbarron.info/">Dr. Jon Barron</a> <br>Last updated March 2025</br>
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
+    <!-- Footer -->
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
+        <tr>
+          <td style="padding:20px">
+            <p style="text-align:right;font-size:small;">
+              Source code credit to <a href="https://jonbarron.info/">Dr. Jon Barron</a><br>
+              Last updated March 2025
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
 
 </html>
